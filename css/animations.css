@@ -1,0 +1,32 @@
+/*
+ Filename: animations.css
+ Written by: Jullien McLean (JLJM)
+ Purpose: Using CSS animations to make Spiderman Swing 
+ Date: 9 April, 2020
+ Modification History: 9 April, 2020
+ Original Build
+*/
+
+@keyframes swinging {
+	0% {transform: rotate(-30deg);
+	}
+50% {transform: rotate(110deg);
+	}
+100% {
+	transform: rotate(-30deg);
+	}
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: -20px;
+	left: 750px;
+	transform-origin: 50% 0;
+	animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+img {
+	height: 250%;
+}
